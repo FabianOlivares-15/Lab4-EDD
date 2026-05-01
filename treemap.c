@@ -90,7 +90,7 @@ void insertTreeMap(TreeMap * tree, void* key, void * value) {
         padre = aux;
         if(tree->lower_than(key, aux->pair->key) == 1)
             aux = aux->left;
-        if(tree->lower_than(aux->pair->key, key) == 1)
+        else if(tree->lower_than(aux->pair->key, key) == 1)
             aux = aux->right;
         else return;
     }
