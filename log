@@ -139,3 +139,18 @@ test.c:503:5: error: ‘main’ defined but not used [-Werror=unused-function]
       |     ^~~~
 cc1: all warnings being treated as errors
 358ed9a
+Fri May  1 10:45:36 PM UTC 2026: 
+Compilation failed
+test.c: In function ‘nextTreeMap’:
+test.c:503:5: error: ‘main’ is normally a non-static function [-Werror=main]
+  503 | int main( int argc, char *argv[] ) {
+      |     ^~~~
+test.c:606:1: error: expected declaration or statement at end of input
+  606 | }
+      | ^
+test.c: At top level:
+test.c:503:5: error: ‘main’ defined but not used [-Werror=unused-function]
+  503 | int main( int argc, char *argv[] ) {
+      |     ^~~~
+cc1: all warnings being treated as errors
+e676c92
