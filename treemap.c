@@ -143,7 +143,8 @@ void eraseTreeMap(TreeMap * tree, void* key){
 
 Pair * firstTreeMap(TreeMap * tree) {
     TreeNode* aux = tree->root;
-    aux = minimun(aux);
+    aux = minimum(aux);
+    tree->current = aux;
     return aux->pair;
 }
 
